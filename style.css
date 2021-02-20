@@ -1,0 +1,210 @@
+/*
+ Theme Name:   Twenty Seventeen Child
+ Theme URI:    http://example.com/twenty-seventeen-child/
+ Description:  Twenty Seventeen Child Theme
+ Author:       KJ
+ Author URI:   http://example.com
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+
+/* Typography for Japanese Font */
+
+html[lang="ja"] body,
+html[lang="ja"] button,
+html[lang="ja"] input,
+html[lang="ja"] select,
+html[lang="ja"] textarea {
+	font-family: 'M PLUS 1p', sans-serif;
+}
+html[lang="ja"] h1,
+html[lang="ja"] h2,
+html[lang="ja"] h3,
+html[lang="ja"] h4,
+html[lang="ja"] h5,
+html[lang="ja"] h6 {
+	font-weight: 700;
+}
+
+/*--------------------------------------------------------------
+5.0 Typography
+--------------------------------------------------------------*/
+
+
+blockquote{
+    position:relative;
+    border-left:3px solid #223a70;
+	padding-left:10px;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+blockquote:before{
+    position:absolute;
+    font-family:'FontAwesome';
+    content:'\f10d';
+    font-size: 20px;
+    color:#223a70;
+}
+blockquote p{
+    position:relative;
+    padding-left:30px;
+}
+blockquote cite{
+    display: block;
+    font-size:0.8rem;
+    color:#F8C8B2;
+    text-align:right;
+}
+
+
+
+h2 {
+	font-size: 22px;
+	font-size: 1.375rem;
+	padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+	color: #494949;/*文字色*/
+	background: #f4f4f4;/*背景色*/
+	border-left: solid 5px #7db4e6;/*左線*/
+	border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+
+.h2_front_page {
+    font-size: 20px;
+	font-size: 1.25rem;
+	border-bottom: double 5px #7db4e6;
+	background: none;/*背景色*/
+	padding: none;
+	border-left: none;/*左線*/
+}
+
+h3 {
+	border-bottom: solid 3px #cce4ff;
+	position: relative;
+  }
+
+
+h3:after {
+	position: absolute;
+	content: " ";
+	display: block;
+	border-bottom: solid 3px #5472cd;
+	bottom: -3px;
+	width: 20%;
+}
+
+.page .panel-content .entry-title,
+.page-title,
+body.page:not(.twentyseventeen-front-page) .entry-title {
+	color: #222;
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: 800;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	background: #ffffff;/*背景色*/
+	border-left: none;
+	border-bottom: none;/*下線*/
+
+}
+
+.breadcrumbs {
+	margin-top: 1em;
+	margin-left: 4em;
+}
+
+
+.navigation-top .current-menu-item > a,
+.navigation-top .current_page_item > a {
+	color: #202f55;
+}
+
+.main-navigation a:hover {
+	color: #202f55;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 0.625rem 2.5rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-flat {
+	overflow: hidden;
+  
+	padding: 0.9375rem 3.75rem;
+  
+	color: #fff;
+	border-radius: 0;
+	background: #000;
+}
+
+a.btn-flat span {	position: relative;
+}
+
+a.btn-flat:before {	position: absolute;	top: 0;	left: 0;
+	width: 100px;	height: 100px;
+	content: '';	-webkit-transition: all .5s ease-in-out;	transition: all .5s ease-in-out;	-webkit-transform: translateX(-80%) translateY(-25px);	transform: translateX(-80%) translateY(-25px);
+	border-radius: 50%;	background: #eb6100;
+}
+
+a.btn-flat:hover:before {	
+	width: 400px;	height: 400px;
+	-webkit-transform: translateX(-1%) translateY(-175px);
+	transform: translateX(-1%) translateY(-175px);
+}
+
+
+
+
+@media screen and (min-width: 48em) {
+	body,
+	button,
+	input,
+	select,
+	textarea {
+		font-size: 16px;
+		font-size: 1rem;
+		line-height: 1.8;
+	}
+
+	.main-navigation li {
+		border: 0;
+		border-bottom:1px solid #fff;
+		display: inline-block;
+	}
+
+	.main-navigation li:hover {
+		display: inline-block;
+	    border-bottom:1px solid #202f55;
+	}
+
+}

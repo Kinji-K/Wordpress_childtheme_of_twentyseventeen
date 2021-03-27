@@ -30,28 +30,72 @@ html[lang="ja"] h6 {
 	font-weight: 700;
 }
 
+
+
+.site-title{
+	position: relative;
+	z-index: 20;
+	margin-left: 2rem;
+	z-index: 5;
+}
+
+.site-description{
+	position: relative;
+	z-index: 20;
+	margin-left: 2rem;
+	z-index: 5;
+}
+
+
+.menu-toggle {
+	background-color: transparent;
+	border: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #222;
+	display: none;
+	font-size: 12px;
+	font-size: 0.75rem;
+	font-weight: 800;
+	line-height: 1.5;
+	margin: 1px auto 2px;
+	padding: 1em;
+	text-shadow: none;
+	width: 150px;
+}
+
 /*--------------------------------------------------------------
 5.0 Typography
 --------------------------------------------------------------*/
 
+.quote_box{
+	position: relative;
+	width: 90%;
+	margin: 1em auto;
+	border-right: solid 1px #202f55;
+	border-left: solid 10px #202f55;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
 
 blockquote{
-    position:relative;
-    border-left:3px solid #223a70;
-	padding-left:10px;
-	font-size: 14px;
+	font-size: 16px;
 	font-size: 0.875rem;
+	font-style: none;
+	line-height: 1.5;
 }
+
 blockquote:before{
-    position:absolute;
+    position:relative;
     font-family:'FontAwesome';
     content:'\f10d';
-    font-size: 20px;
-    color:#223a70;
+    font-size: 2em;
+    color:cccccc;
+	top: 0,5em;
 }
 blockquote p{
     position:relative;
-    padding-left:30px;
+    padding: 0.5em 0 0 4em;
 }
 blockquote cite{
     display: block;
@@ -96,6 +140,10 @@ h3:after {
 	width: 20%;
 }
 
+.cover {
+	text-shadow: 1px 2px 3px #000;
+}
+
 .page .panel-content .entry-title,
 .page-title,
 body.page:not(.twentyseventeen-front-page) .entry-title {
@@ -119,9 +167,29 @@ h2:first-child {
 	padding-top: 0.6em;
 }
 
+.breadcrumbs:before{
+    position:relative;
+    font-family:'FontAwesome';
+    content:'\f015';
+    font-size: 1em;
+	z-index: 3;
+	background-color: #fcfcfc;
+}
+
 .breadcrumbs {
+	position: absolute;
 	margin-top: 1em;
-	margin-left: 4em;
+	margin-bottom: 0.5rem;
+	z-index: 3;
+	background-color: #fcfcfc;
+	padding: 0 0 0 2rem;
+	font-size: 1em;
+}
+
+.breadcrumbs_background {
+	background-color: #fcfcfc;
+	position:relative;
+	height: 2.5rem;
 }
 
 .archive-link{
@@ -201,9 +269,37 @@ a.btn-flat:hover:before {
 	transform: translateX(-1%) translateY(-175px);
 }
 
+.panel_box{
+    padding: 1em 1.5em;
+    margin: 2em 0;
+    background-color:#f6faee;/*背景色*/
+	border-style: solid;
+	border-color: #202f55; /* 枠の色 */
+	border-width: 5px 1px 1px;
+    color:#000000;/*文字色*/
+	box-shadow: 1px 1px 3px #ccc; /* 影 */
+}
 
+.panel_box p{
+	margin:0;
+	padding: 0 1em 1em 1em;
+}
 
-  
+.rpwwt-post-title:before {
+	content: "\A" ;
+	white-space: pre ;
+}
+
+.rpwwt-post-title{
+	color: #202f55;
+	text-decoration: underline;
+}
+
+.panel-content .wrap {
+	padding-bottom: 2em;
+	padding-top: 3.5em;
+}
+
 @media screen and (min-width: 48em) {
 	body,
 	button,
@@ -226,12 +322,33 @@ a.btn-flat:hover:before {
 	    border-bottom:1px solid #202f55;
 	}
 
+	.main-navigation a {
+		padding: 1em 1em;
+	}
+
 	/* Widgets */
 
 	h2.widget-title {
 		font-size: 14px;
 		font-size: 0.875rem;
 		margin-bottom: 2em;
+	}
+
+	.site-branding-text {
+		padding: 1rem 2rem;
+	}
+
+	.branding-background{
+		width: 60%;
+		height: 100%;
+		background-color: #000;
+		opacity: 0.6;
+		position: absolute;
+		top: 0;
+	}
+
+	.site-content {
+		padding: 2.5em 0 0;
 	}
 
 }
